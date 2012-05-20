@@ -1,0 +1,17 @@
+#chart {
+	position: relative;
+	top: 2%;
+	min-height: 95%;
+}
+
+#chart > img {
+	position: absolute;
+	max-width: 100px;
+	z-index: 100;
+	left: 100%;
+	bottom: 0px;
+}
+
+#main {
+	padding-top: 10px;
+}
