@@ -30,8 +30,9 @@ ContagionTimeline.prototype.renderChart = function() {
 
     // setup plot
     var options = {
+    	grid : {borderWidth: 0},
     	lines: { show: true, fill: true },
-        series: { shadowSize: 0 }, // drawing is faster without shadows
+        series: { shadowSize: 0,color: "rgb(89,33,16)" }, // drawing is faster without shadows
         zoom: {
             interactive: true
         },
@@ -50,7 +51,8 @@ ContagionTimeline.prototype.renderChart = function() {
         	     weight: "bold",
         	     family: "sans-serif",
         	     variant: "small-caps"
-        	}
+        	},
+      	  color: "rgb(230,230,230)"
         },
         xaxis : {
         	tickFormatter : function (val, axis) {
@@ -159,7 +161,7 @@ ContagionTimeline.prototype.pollForUpdates = function(time) {
 	}
 	
 	var contagionTimeline = this;
-	$.post('/api/getPictures', data, function(response) {
+	$.post('/contagion_server-0.1/api/getPictures', data, function(response) {
 		
 		if (response.success == true) {
 			

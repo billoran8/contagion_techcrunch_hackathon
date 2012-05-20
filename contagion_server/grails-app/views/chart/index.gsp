@@ -18,6 +18,25 @@
 		</g:javascript>
 	</head>
 	<body>
+	<div id="header">
+		<div class="container" id="topHeader">
+			<div class="row">
+				<img src="images/logo2.png" style="display:block; margin-left:auto;margin-right:auto;" />
+			</div>
+		</div>
+		
+		<div class="container" id="middleHeader">
+			<div class="row">
+				<img src="images/middleheader.png" style="display:block; margin-left:auto;margin-right:auto;" />
+			</div>
+		</div>
+		
+		<div class="container" id="bottomHeader">
+			<div class="row">
+				<img src="images/bottomheader.png" style="display:block; margin-left:auto;margin-right:auto;" />
+			</div>
+		</div>
+	</div>
 		<div class="container" id="main">
 			<div class="row content" id="chart">
 			

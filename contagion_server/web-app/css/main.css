@@ -2,16 +2,46 @@
 	position: relative;
 	top: 2%;
 	min-height: 95%;
+	z-index: 10;
 }
 
 #chart > img {
 	position: absolute;
 	max-width: 100px;
-	z-index: 100;
+	z-index: 50;
 	left: 100%;
 	bottom: 0px;
 }
 
 #main {
 	padding-top: 10px;
+}
+
+#header {
+	position: absolute;
+	
+	top: 0px;
+	width: 100%;
+	min-height: 25px;
+	z-index: 100;
+	
+	
+}
+
+body {
+	background-color: rgba(230,230,230,1.0);
+}
+
+#header > #topHeader {
+	background-color: rgba(230,230,230,1.0);
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+#header > #middleHeader {
+	background-color: rgba(89,33,16,1.0);
+}
+
+#header > #bottomHeader {
+	background-color: rgba(190,72,37,1.0);
 }
